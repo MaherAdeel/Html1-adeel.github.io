@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+         .rapper{
+            width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	display: flex;
+	flex-flow: row nowrap;
+	background-color: #efb106 ;
+
+         }
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image:url(./image/galaxy.jpg);
+
+         }
+         label{
+            display: block;
+         }
+         legend{
+            display: block;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+         }
+         input{
+            border-radius: 10px;
+         }
+         fieldset{
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 1rem;
+         }
+         section {
+	flex-basis: 57%;
+	margin-right: 10%;
+         }
+         aside{
+            flex-basis: 33%;
+         }
+
+
+
+         
+    </style>
+</head>
+<body>
+    <div class="rapper" >
+      <section>  
+        <h1 align="center">SIGN UP</h1>
+        <h2 align="center">Reserve Your Spot</h2>
+        <p align="center">Fill The Amazing Form to Become the Part of the Amazing website .</p>
+        <form action="http://www.example.com/login,php" method="get">
+          <fieldset>
+            <legend>Personal information</legend>
+            <label for="name">First Name:</label>
+            <input type="text" name="First name"  placeholder="Don't forget." size="50"/>
+            <br> <br>
+            <label for="last name">Last Name:</label>
+            <input type="text" name="last name"  placeholder="Don't forget." size="50"/>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Don't forget" size="50" />
+            <br><br>
+            <label for="website">website</label>
+            <input type="url" name="website" size="50" placeholder="Don't forget">
+            <br><br>
+            <label for="number">Mobile Number:</label>
+            <input type="tel" name="number" id="number" placeholder="Don't forget" size="50"/>
+
+
+          </fieldset>
+          <br><br> 
+          <fieldset>
+            <legend>More About:</legend>
+             <label for="Gender">Gender</label>
+             <input type="radio" name="Gender" value="male" checked/>Male
+             <input type="radio" name="Gender" value="Female"/>FeMale
+             <br><br>
+             <label for="interest">Interest</label>
+             <input type="checkbox" name="interest" value="Education"/>Education
+             <input type="checkbox" name="interest" value="books"/>Books
+             <input type="checkbox" name="interest" value="sports"/>sports
+             <input type="checkbox" name="interest" value="Entertainment"/>Entertainment
+             <br><br>
+             <label for="nationality">Nationality</label>
+             <select name="country" >
+                <option value="Pakistan">Pakistan</option>
+                <option value="USA">USA</option>
+                <option value="CHINA">CHINA</option>
+                <option value="INDIA">INDIA</option>
+                <option value="UK">UK</option>
+                <option value="AUS">AUS</option>
+             </select>
+             <br><br>
+             <label for="brithday">Brithday</label>
+             <input type="date" name="Brithday"  />
+             <br><br>
+             <label for="password">password</label>
+             <input type="password" name="password" size="50" maxlength="30" placeholder="password"/>
+             <br><br>
+             <label for="Re-enterpassword">Re-enterpassword</label>
+             <input type="password" name="Re-enterpassword" size="50" maxlength="30" placeholder="Re-enterpassword"/>
+             <br><br>
+             <label for="comment">Comment:</label>
+             <textarea name="comment" rows="5" cols="30" placeholder="Enter Your comment Here...">
+             </textarea>
+             <br><br>
+             <label for="profile photo">Profile photo</label>
+             <input type="file" name="profile" value="profile"/>
+             <!-- <br> -->
+             <input type="submit" name="upload" value="submit"/>
+             <br><br><br>
+             <input type="image" src="https://freepngimg.com/thumb/submit_button/25387-5-submit-button-clipart.png" alt="submit_button" width="150" onclick="alert('thank u for submit.')">
+
+
+
+          </fieldset> 
+        </form>
+    </section>
+    <aside>
+        <H3>Our location</H3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27433.480097214055!2d73.33653025!3d30.741304199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922a509ddcaa07b%3A0xd24075419cfd6c78!2sAdda%20Gamber%2C%20Okara%2C%20Punjab!5e0!3m2!1sen!2s!4v1675794260698!5m2!1sen!2s" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <address>
+            <a href="https://goo.gl/maps/4s6uzas53954sz7H9">Adda Gamber Okara Cantt.</a>
+        </address>
+    </aside> 
+    </div>
+
+</body>
+</html>
